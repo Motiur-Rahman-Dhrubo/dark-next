@@ -1,14 +1,17 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kalam, Great_Vibes } from "next/font/google";
 import "./globals.css";
+import NavBar from "./components/NavBar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const kalam = Kalam({
   subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-kalam",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const greatVibes = Great_Vibes({
   subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-great-vibes",
 });
 
 export const metadata = {
@@ -18,10 +21,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${kalam.variable} ${greatVibes.variable}`}>
+      <body className={`font-kalam antialiased`}>
+        <NavBar />
         {children}
       </body>
     </html>

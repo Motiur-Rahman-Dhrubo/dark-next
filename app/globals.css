@@ -24,3 +24,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.font-kalam {
+  font-family: var(--font-kalam);
+}
+
+.font-great-vibes {
+  font-family: var(--font-great-vibes);
+}
