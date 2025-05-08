@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaRegEnvelope } from "react-icons/fa";
@@ -16,7 +16,7 @@ const NavBar = () => {
 
   const links = (
     <>
-      <Link href="/" className={`hover:bg-[#1E1812] lg:px-2 px-4 py-1 rounded-lg ${pathname === "/home" ? "bg-[#1E1812]" : ""}`}>Home</Link>
+      <Link href="/" className={`hover:bg-[#1E1812] lg:px-2 px-4 py-1 rounded-lg ${pathname === "/" ? "bg-[#1E1812]" : ""}`}>Home</Link>
       <Link href="/web-development" className={`hover:bg-[#1E1812] lg:px-2 px-4 py-1 rounded-lg ${pathname === "/web-development" ? "bg-[#1E1812]" : ""}`}>Web Development</Link>
       <Link href="/app-development" className={`hover:bg-[#1E1812] lg:px-2 px-4 py-1 rounded-lg ${pathname === "/app-development" ? "bg-[#1E1812]" : ""}`}>App Development</Link>
       <Link href="/portfolio" className={`hover:bg-[#1E1812] lg:px-2 px-4 py-1 rounded-lg ${pathname === "/portfolio" ? "bg-[#1E1812]" : ""}`}>Portfolio</Link>
@@ -25,7 +25,7 @@ const NavBar = () => {
   );
 
   return (
-    <nav>
+    <nav className="w-full sticky top-0 z-50 bg-black/90">
       <div className="w-11/12 mx-auto flex items-center justify-between md:py-4 py-2 text-[#DCA54C]">
         <Link href="/" className="text-2xl lg:text-4xl font-great-vibes">
           Dark Tech Team

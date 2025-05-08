@@ -1,5 +1,14 @@
-import { redirect } from "next/navigation";
+import React from 'react';
+import Hero from './components/Hero';
+import Portfolio from './components/Portfolio';
 
-export default function Home() {
-  redirect("/home");
-}
+const page = () => {
+  return (
+    <>
+      <Hero></Hero>
+      <Portfolio></Portfolio>
+    </>
+  );
+};
+
+export default page;
