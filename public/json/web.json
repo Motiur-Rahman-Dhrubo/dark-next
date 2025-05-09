@@ -3,21 +3,21 @@
     "name": "Sultana Boutique",
     "details": "Sultana Boutique is an E-commerce site. We are passionate about helping you discover unique and elegant pieces that reflect your individuality and enhance your wardrobe.",
     "liveLink": "https://sultanaboutiques.com/",
-    "image": "@/public/image/web/sultana-boutique.png",
+    "image": "/image/web/sultana-boutique.png",
     "features": ["UI/UX", "DEVELOPMENT", "HOSTING"]
   },
   {
     "name": "Gift Share",
     "details": "Giftshare is an E-commerce site, Giftshare Chocolate, where sweet dreams are crafted into delectable reality.",
     "liveLink": "https://giftshare.co.jp/",
-    "image": "@/public/image/web/giftshare.png",
+    "image": "/image/web/giftshare.png",
     "features": ["UI/UX", "DEVELOPMENT", "HOSTING"]
   },
   {
     "name": "A JHARNA TRADE INTERNATIONAL",
     "details": "A Jharna Trade International is a Human Resource Management Solution Organization that provides manpower across the world as requirements.",
     "liveLink": "https://ajharnatradeint.com/",
-    "image": "@/public/image/web/ajharnatradeint.png",
+    "image": "/image/web/ajharnatradeint.png",
     "features": ["UI/UX", "DEVELOPMENT", "HOSTING"]
   }
 ]

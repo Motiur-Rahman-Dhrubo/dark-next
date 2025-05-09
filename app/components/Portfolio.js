@@ -1,5 +1,7 @@
 "use client";
 import React, { useState } from "react";
+import WebSec from "./WebSec";
+import AppSec from "./AppSec";
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState("webTab");
@@ -16,7 +18,7 @@ const Portfolio = () => {
 
       <div className="py-8">
         {/* Tabs */}
-        <div className="flex mb-5 text-xl font-bold justify-around">
+        <div className="flex mb-5 text-base md:text-xl font-bold justify-around">
           <button
             onClick={() => setActiveTab("webTab")}
             className={`p-3 border-b-2 cursor-pointer ${
@@ -36,18 +38,12 @@ const Portfolio = () => {
         </div>
 
         {/* Tab Content */}
-        <div className="border p-6 rounded-lg">
+        <div>
           {activeTab === "webTab" && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4">This is Tab 1 Content</h2>
-              <p>Put anything you want here for Tab 1.</p>
-            </div>
+            <WebSec></WebSec>
           )}
           {activeTab === "appTab" && (
-            <div>
-              <h2 className="text-2xl font-bold mb-4">This is Tab 2 Content</h2>
-              <p>Put anything you want here for Tab 2.</p>
-            </div>
+            <AppSec></AppSec>
           )}
         </div>
       </div>
