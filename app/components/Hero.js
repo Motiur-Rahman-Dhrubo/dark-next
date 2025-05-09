@@ -9,8 +9,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 
-import Image1 from "@/public/hero/app1.jpg";
-import Image2 from "@/public/hero/web1.png";
+import Image1 from "@/public/image/hero/app1.jpg";
+import Image2 from "@/public/image/hero/web1.png";
 
 const Hero = () => {
   return (
