@@ -17,7 +17,7 @@ const WebSec = () => {
       {webData.map((item, index) => (
         <div
           key={index}
-          className={`p-5 md:p-10 rounded-lg bg-[#171618] flex flex-col-reverse gap-4 ${
+          className={`p-5 md:p-10 rounded-lg bg-[#171618] flex flex-col-reverse md:gap-4 gap-5 ${
             index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
           }`}
         >
@@ -36,7 +36,9 @@ const WebSec = () => {
                 </span>
               ))}
             </div>
-            <h3 className="text-2xl font-bold text-[#DCA54C]">{item.name}</h3>
+            <h3 className="md:text-2xl text-xl font-bold text-[#DCA54C]">
+              {item.name}
+            </h3>
             <p className="text-justify text-gray-400 text-base">
               {item.details}
             </p>
