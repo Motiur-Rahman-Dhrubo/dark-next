@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -17,8 +15,17 @@ const WebSec = () => {
   return (
     <div className="flex gap-4 flex-col">
       {webData.map((item, index) => (
-        <div key={index} className={`p-5 md:p-10 rounded-lg bg-[#171618] flex flex-col-reverse gap-4 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
-          <div className={`w-full md:w-1/2 flex flex-col justify-center gap-3 md:gap-5 ${index % 2 === 0 ? "md:pr-5" : "md:pl-5"}`}>
+        <div
+          key={index}
+          className={`p-5 md:p-10 rounded-lg bg-[#171618] flex flex-col-reverse gap-4 ${
+            index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+          }`}
+        >
+          <div
+            className={`w-full md:w-1/2 flex flex-col justify-center gap-3 md:gap-5 ${
+              index % 2 === 0 ? "md:pr-5" : "md:pl-5"
+            }`}
+          >
             <div className="flex gap-3 text-xs text-center flex-wrap">
               {item.features.map((feature, idx) => (
                 <span
@@ -33,8 +40,12 @@ const WebSec = () => {
             <p className="text-justify text-gray-400 text-base">
               {item.details}
             </p>
-            <a href={item.liveLink} className="flex gap-3 font-bold uppercase text-[#DCA54C] text-base" target="_blank" >
-                <FaExternalLinkAlt />
+            <a
+              href={item.liveLink}
+              className="flex gap-3 font-bold uppercase text-[#DCA54C] text-base"
+              target="_blank"
+            >
+              <FaExternalLinkAlt />
               Visit Site
             </a>
           </div>
